@@ -3,7 +3,7 @@
 A dark variant of the Researcher theme for Hugo. The original was ported from Jekyll theme
 [ankitsultana/researcher](https://github.com/ankitsultana/researcher), but I decided a dark theme would be something nice to have.
 
-![screenshot of dark themed researcher](https://i.ibb.co/K2krtJv/2022-05-09-8-54-13.png)
+![screenshot of dark themed researcher](https://i.ibb.co/mDFGBhB/2022-05-12-2-35-34.png)
 
 ## Installation
 

@@ -3,8 +3,10 @@ $max-width: {{ .Param "style.pageWidth" | default "750px;" }};
 $avatar-size: {{ .Param "style.avatarSize" | default "90px;" }};
 
 // Colors
+$white: {{ .Param "style.colorWhite" | default "#ededed" }};
 $black: {{ .Param "style.colorBlack" | default "#222222" }};
 $red: {{ .Param "style.colorRed" | default "#dc3545" }};
+$blue: {{ .Param "style.colorBlue" | default "#9daebf" }};
 
 // Font
 $font-family: {{ .Param "style.fontFamily" | default "Inconsolata" }};
@@ -15,24 +17,24 @@ $y-medium: 1.0rem;
 
 // Placeholders
 %link-default {
-    color: $red;
+    color: $blue;
     text-decoration: none;
     & * {
-        color: $red;
+        color: $blue;
     }
     &:hover {
-        color: $red;
+        color: $blue;
         text-decoration: underline;
     }
 }
 %link-dark {
-    color: $black;
+    color: $white;
     text-decoration: none;
     & * {
-        color: $black;
+        color: $white;
     }
     &:hover {
-        color: $black;
+        color: $white;
         text-decoration: underline;
     }
 }
@@ -42,9 +44,17 @@ $y-medium: 1.0rem;
     text-align: left;
 }
 
+body {
+    background-color: $black;
+    hr {
+        background-color: $white;
+    }
+}
+
 // Style
 * {
-    color: $black;
+    background-color: $black;
+    color: $white;
     font-family: $font-family;
     line-height: 1.2;
 }
@@ -138,13 +148,21 @@ $y-medium: 1.0rem;
     }
     code {
         color: $black;
-        background-color: #f8f8f8;
-        border: 1px solid #cccccc;
+        background-color: $white;
+        border: 1px solid $black;
         border-radius: 10%;
         padding: 0px 4px;
     }
+    pre {
+        border-radius: .5em;
+        border: 1px solid $white;
+        margin: .5em 0;
+        overflow: auto;
+        padding: 1em;
+    }
     pre code {
-        all: unset;
+        color: $white;
+        background-color: $black;
     }
     .highlight {
         margin: $y-medium auto;

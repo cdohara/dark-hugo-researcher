@@ -10,6 +10,7 @@ $blue: {{ .Param "style.colorBlue" | default "#9daebf" }};
 
 // Font
 $font-family: {{ .Param "style.fontFamily" | default "Inconsolata" }};
+$font-size: {{ .Param "style.fontSize" | default "14pt" }};
 
 // Margins
 $y-small: 0.6rem;
@@ -56,6 +57,7 @@ body {
     background-color: $black;
     color: $white;
     font-family: $font-family;
+    font-size: $font-size;
     line-height: 1.2;
 }
 .container {

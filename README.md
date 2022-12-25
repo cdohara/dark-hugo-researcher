@@ -7,8 +7,6 @@ A dark variant of the Researcher theme for Hugo. The original was ported from Je
 
 ## Installation
 
-Generally, you can follow the same installation
-
 Add the theme to your site's `themes` directory:
 ```bash
 git submodule add https://github.com/cdohara/dark-hugo-researcher.git themes/dark-hugo-researcher
@@ -21,7 +19,7 @@ Update the theme option in `config.toml`:
 theme = "dark-hugo-researcher"
 ```
 
-Generally, you can follow the instructions in [ojroques/hugo-researcher](https://github.com/ojroques/hugo-researcher). I deleted a lot of stuff for less "bloat."
+Generally, you can follow the same installation instructions in [ojroques/hugo-researcher](https://github.com/ojroques/hugo-researcher).
 
 ## License
 [GPL-3.0 License](https://github.com/cdohara/dark-hugo-researcher/blob/master/LICENSE)
